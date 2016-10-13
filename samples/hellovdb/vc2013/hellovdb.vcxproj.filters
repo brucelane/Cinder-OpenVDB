@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
@@ -11,6 +12,24 @@
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="blocks">
+      <UniqueIdentifier>{c5b55243-911c-4929-90e0-a3574782c7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blocks\Cinder-OpenVDB">
+      <UniqueIdentifier>{dcbf0e6d-60ec-43ce-9117-61c83ef6624a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blocks\Cinder-OpenVDB\src">
+      <UniqueIdentifier>{19fa77d6-adce-457a-940e-d9b28cd68265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blocks\Cinder-OpenVDB\src\tbb">
+      <UniqueIdentifier>{3df072e4-b4b3-4e1a-8af0-59eadd7ba10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blocks\Cinder-OpenVDB\src\OpenVDB">
+      <UniqueIdentifier>{231e43bd-9e22-440c-a058-b683f683c4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="blocks\Cinder-OpenVDB\src\OpenEXR">
+      <UniqueIdentifier>{bc2a1b25-5288-40cd-942b-ab1592d5570a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,6 +46,633 @@
   <ItemGroup>
     <ClInclude Include="..\include\Resources.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\half.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\halfExport.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\halfFunction.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\halfLimits.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\Iex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexBaseExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexErrnoExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexExport.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexForward.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexMacros.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexMathExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexMathFloatExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexMathFpu.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexMathIeeeExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexNamespace.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IexThrowErrnoExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmBaseConfig.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThread.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadExport.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadForward.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadMutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadNamespace.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadPool.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\IlmThreadSemaphore.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathBox.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathBoxAlgo.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathColor.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathColorAlgo.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathEuler.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathExc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathExport.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathForward.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathFrame.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathFrustum.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathFrustumTest.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathFun.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathGL.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathGLU.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathHalfLimits.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathInt64.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathInterval.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathLimits.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathLine.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathLineAlgo.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathMath.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathMatrix.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathMatrixAlgo.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathNamespace.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathPlane.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathPlatform.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathQuat.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathRandom.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathRoots.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathShear.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathSphere.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathVec.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImathVecAlgo.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfAcesFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfArray.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfB44Compressor.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfBoxAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfChannelList.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfChannelListAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfChromaticities.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfChromaticitiesAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfCompositeDeepScanLine.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfCompression.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfCompressionAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfConvert.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfCRgbaFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepCompositing.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepFrameBuffer.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepImageState.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepImageStateAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepScanLineInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepScanLineInputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepScanLineOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepScanLineOutputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepTiledInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepTiledInputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepTiledOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDeepTiledOutputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfDoubleAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfEnvmap.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfEnvmapAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfExport.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfFloatAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfForward.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfFrameBuffer.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfFramesPerSecond.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfGenericInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfGenericOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfHeader.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfHuf.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfInputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfInt64.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfIntAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfIO.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfKeyCode.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfKeyCodeAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfLineOrder.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfLineOrderAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfLut.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfMatrixAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfMisc.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfMultiPartInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfMultiPartOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfMultiView.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfName.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfNamespace.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfOpaqueAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfOutputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfPartHelper.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfPartType.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfPixelType.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfPreviewImage.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfPreviewImageAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfRational.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfRationalAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfRgba.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfRgbaFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfRgbaYca.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfStandardAttributes.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfStringAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfStringVectorAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTestFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfThreading.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTileDescription.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTileDescriptionAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTiledInputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTiledInputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTiledOutputFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTiledOutputPart.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTiledRgbaFile.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTimeCode.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfTimeCodeAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfVecAttribute.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfVersion.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfWav.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\ImfXdr.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenEXR\OpenEXRConfig.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenEXR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\Exceptions.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\Grid.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\Metadata.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\openvdb.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\Platform.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\PlatformConfig.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\Types.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\OpenVDB\version.h">
+      <Filter>blocks\Cinder-OpenVDB\src\OpenVDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\aggregator.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\aligned_space.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\atomic.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\blocked_range.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\blocked_range2d.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\blocked_range3d.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\cache_aligned_allocator.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\combinable.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_hash_map.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_lru_cache.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_priority_queue.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_queue.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_unordered_map.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_unordered_set.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\concurrent_vector.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\critical_section.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\enumerable_thread_specific.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\flow_graph.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\flow_graph_opencl_node.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\global_control.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\memory_pool.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\null_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\null_rw_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_do.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_for.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_for_each.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_invoke.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_reduce.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_scan.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_sort.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\parallel_while.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\partitioner.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\pipeline.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\queuing_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\queuing_rw_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\reader_writer_lock.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\recursive_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\runtime_loader.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\scalable_allocator.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\spin_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\spin_rw_mutex.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\task.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\task_arena.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\task_group.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\task_scheduler_init.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\task_scheduler_observer.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_allocator.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_config.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_exception.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_machine.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_profiling.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_stddef.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbb_thread.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tbbmalloc_proxy.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\tbb\tick_count.h">
+      <Filter>blocks\Cinder-OpenVDB\src\tbb</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
